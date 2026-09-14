@@ -8,5 +8,5 @@ ADD https://github.com/herbertkb/spring-rhdh-demo/raw/refs/heads/main/backend/ta
 
 EXPOSE 7890
 #RUN chmod 755 main.jar
-RUN ls
+RUN ls -l
 CMD ["java", "-Dserver.port=7890", "-jar", "main.jar"]
