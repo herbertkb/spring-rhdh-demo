@@ -1,6 +1,6 @@
 # Use an OpenJDK base image for Java
 #FROM openjdk:17
-FROM openshift-pipeline/ubi8-openjdk-17
+FROM ubi9/openjdk-17:1.24-3.1788862447
 
 
 # Use ADD to download the JAR directly from GitHub
