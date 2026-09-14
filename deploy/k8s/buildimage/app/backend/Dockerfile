@@ -1,5 +1,7 @@
 # Use an OpenJDK base image for Java
-FROM openjdk:17
+#FROM openjdk:17
+FROM openshift-pipeline/ubi8-openjdk-17
+
 
 # Use ADD to download the JAR directly from GitHub
 ADD https://github.com/herbertkb/spring-rhdh-demo/raw/refs/heads/main/backend/target/weather-0.0.1-SNAPSHOT.jar main.jar
